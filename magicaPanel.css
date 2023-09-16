@@ -1,1 +1,876 @@
+.mainPage {
+    height:600px;
+    bordser: solid 5px lightseagreen;
+    background-color: rgb(1, 22, 1) ;
+    background-repeat: cover;
+    display:grid;
+    gap: 5px;
+    grid-template-areas: 
+    "results results stats stats"
+    "event event event event"
+    
+}
 
+.results {
+    grid-area:results;
+    height:400px;
+    bordesr:solid 5px;
+    display: grid;
+    grid-template-areas: 
+    "gameId ticketOutcome numberOfOutcomes winOutcome"
+    "gameId ticketOutcome numberOfOutcomes winOutcome"
+    "gameId ticketOutcome numberOfOutcomes winOutcome"
+    "gameId ticketOutcome numberOfOutcomes winOutcome"
+    "gameId ticketOutcome numberOfOutcomes winOutcome"
+    "gameId ticketOutcome numberOfOutcomes winOutcome"
+    "gameId ticketOutcome numberOfOutcomes winOutcome"
+    "gameId ticketOutcome numberOfOutcomes winOutcome";  
+
+    
+    
+}
+
+
+.stats {
+    grid-area:stats;
+    height:400px;
+    bosrder: solid 5px;
+    display:grid;
+    grid-template-areas: 
+    "lateNumbers"
+    "hotNumbers"
+    "winningColor"
+    ;
+
+
+}
+.event {
+    display: grid;
+    grid-template-areas:
+    "one two three four five six seven";
+    grid-area:event;
+    heivght: 200px;
+    borsder: solid 5px;
+    gap: 5px;
+    
+}
+
+.one {
+    border: solid 5px;
+    grid-area:one;
+    border-radius: 100px;
+    background-color: red;
+    padding-top: 20px;
+    align-content: center;
+    color:white;
+    text-align: center;
+    font-size: larger;
+    
+
+
+
+}
+
+.two {
+    grid-area:two;
+    border: solid 5px;
+    border-radius: 100px;
+
+    padding-top: 20px;
+    align-content: center;
+    color:white;
+    text-align: center;
+    font-size: larger;
+    background-color: blue;
+}
+.three {
+    grid-area:three;
+    border: solid 5px;
+    border-radius: 100px;
+    background-color: red;
+    padding-top: 20px;
+    align-content: center;
+    color:white;
+    text-align: center;
+    font-size: larger;
+}
+.four {
+    grid-area: four;
+    border: solid 5px;
+    border-radius: 100px;
+    background-color:yellow;
+    padding-top: 20px;
+    align-content: center;
+    color:white;
+    text-align: center;
+    font-size: larger;
+
+
+}
+.five {
+    grid-area: five;
+    border: solid 5px;
+    border-radius: 100px;
+    background-color: red;
+    padding-top: 20px;
+    align-content: center;
+    color:white;
+    text-align: center;
+    font-size: larger;
+}
+.six {
+    grid-area: six;
+    border: solid 5px;
+    border-radius: 100px;
+    background-color: blue;
+    padding-top: 20px;
+    align-content: center;
+    color:white;
+    text-align: center;
+    font-size: larger;
+}
+.seven {
+    border-radius: 48px;
+    grid-area: seven;
+    
+    display:grid;
+    grid-template-areas:
+    "yellow blue red"
+    "color color color"
+    ;
+}
+.yellow {
+    grid-area: yellow;
+    background-color: yellow;
+    border-radius: 20px;
+    ;
+}
+.blue {
+    grid-area: blue;
+    background-color: blue;
+    border-radius: 20px;
+
+}
+.red {
+    grid-area:red;
+    background-color: red;
+    border: solid green 5px;
+    border-radius: 20px;
+    
+
+}
+.color {
+    grid-area:color;
+    background-color: red;
+    border-radius: 20px;
+}
+
+.lateNumbers {
+    border:solid 5px aqua ;
+    background-color: aqua;
+    height: 130px;
+    grid-area:lateNumbers;
+    
+    display: grid;
+    grid-template-areas: 
+    "late5 late4 late3 late2 late1";  
+}
+
+.late5 {
+    grid-area:late5;
+    border: solid 3px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    "number latetimes";
+
+}
+.number {
+    grid-area: number;
+    border: solid 3px;
+    background-color: blue;
+    border-radius: 40%;
+    height: 100px;
+    color:white;
+    text-align: center;
+    
+    align-items: center;
+}
+    
+.number5 {
+    grid-area: number;
+    border: solid 3px;
+    background-color:yellow;
+    border-radius: 40%;
+    height: 100px;
+    color:white;
+    text-align: center;
+    
+    align-items: center;
+
+}
+.number4 {
+    grid-area: number;
+    border: solid 3px;
+    background-color: blue;
+    border-radius: 40%;
+    height: 100px;
+    color:white;
+    text-align: center;
+    
+    align-items: center;
+}
+
+.number3 {
+    grid-area: number;
+    border: solid 3px;
+    background-color: red;
+    border-radius: 40%;
+    height: 100px;
+    color:white;
+    text-align: center;
+    
+    align-items: center;
+}
+.number2 {
+    grid-area: number;
+    border: solid 3px;
+    background-color: blue;
+    border-radius: 40%;
+    height: 100px;
+    color:white;
+    text-align: center;
+    
+    align-items: center;
+}
+
+.number1 {
+    grid-area: number;
+    border: solid 3px;
+    background-color: yellow;
+    border-radius: 40%;
+    height: 100px;
+    color:white;
+    text-align: center;
+    
+    align-items: center;
+}
+.latetimes {
+    grid-area: latetimes;
+    height: 50px;
+    border: solid 3px;
+    background-color: black;
+    border-radius: 50px;
+    color:white;
+    text-align: center;
+    
+    align-items: center;
+
+}
+
+.late4 {
+    grid-area: late4;
+    border: solid 3px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    "number latetimes";
+    
+}
+.late3 {
+    grid-area: late3;
+    border: solid 3px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    "number latetimes";
+    
+}
+.late2 {
+    grid-area: late2;
+    border: solid 3px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    "number latetimes";
+
+}
+.late1 {
+    grid-area:late1;
+    border: solid 3px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    "number latetimes";
+    
+}
+
+.hotNumbers {
+    grid-area:hotNumbers;
+    height: 130px;
+    border: solid 4px;
+    background-color: rgb(218, 7, 7);
+    
+
+
+    display: grid;
+    grid-template-areas: 
+    "late5 late4 late3 late2 late1";  
+    
+
+}
+.winningColor {
+    grid-area: winningColor;
+    height: 130px;
+    padding: 5px;
+    border:5px solid aquamarine;
+    background-color: aqua;
+    display: grid;
+    grid-template-areas: 
+    "color1 color2 color3 color4";  
+}
+.color1 {
+    grid-area:color1;
+    border: solid 3px;
+    
+    
+    display: grid;
+    grid-template-areas: 
+    "colorNameRed"
+    "numberOfDraws";
+
+
+}
+.colorNameRed {
+    grid-area: colorNameRed;
+    border: solid 3px;
+    width: 60%;
+    border-radius: 30px;
+    background-color:red;
+    align-content: center;
+    color:white;
+    text-align: center;
+    font-size: larger;
+    height: 65px;
+
+}
+.numberOfDraws {
+    grid-area: numberOfDraws;
+    height: 65px;
+    border:solid 3px;
+    width: 30%;
+    border-radius: 30px;
+    background-color:black;
+    color:white;
+    text-align: center;
+    
+    align-items: center;
+    
+    height: 35px;
+}
+.colorNameYellow {
+    grid-area: colorNameYellow;
+    border: solid 3px;
+    width: 60%;
+    border-radius: 30px;
+    background-color:yellow;
+    align-content: center;
+    color:white;
+    text-align: center;
+    font-size: larger;
+    height: 65px;
+
+}
+.color2 {
+    grid-area:color2;
+    border: solid 3px;
+    
+    display: grid;
+    grid-template-areas: 
+    "colorNameYellow"
+    "numberOfDraws";
+}
+.colorNameBlue {
+    grid-area: colorNameBlue;
+    border: solid 3px;
+    width: 60%;
+    border-radius: 30px;
+    background-color:blue;
+    align-content: center;
+    color:white;
+    text-align: center;
+    font-size: larger;
+    height: 65px;
+
+}
+.color3 {
+    grid-area:color3;
+    border: solid 3px;
+    
+    display: grid;
+    grid-template-areas: 
+    "colorNameBlue"
+    "numberOfDraws";
+}
+.colorNameDraw {
+    grid-area: colorNameDraw;
+    border: solid 3px;
+    width: 60%;
+    border-radius: 30px;
+    background-color:grey;
+    align-content: center;
+    color:white;
+    text-align: center;
+    font-size: larger;
+    height: 65px;
+
+}
+.color4 {
+    grid-area:color4;
+    border: solid 3px;
+    
+    display: grid;
+    grid-template-areas: 
+    "colorNameDraw"
+    "numberOfDraws";
+}
+
+
+
+.gameId {
+    border: solid;
+    grid-area: gameId;
+    display:grid;
+    grid-template-areas: 
+    "ticketId1"
+    "ticketId2"
+    "ticketId3"
+    "ticketId4"
+    "ticketId5"
+    "ticketId6"
+    "ticketId7"
+    "ticketId8"
+    ;
+}
+.ticketOutcome {
+    borsder: solid;
+    grid-area: ticketOutcome;
+    display:grid;
+    grid-template-areas: 
+    "ticketOutcome1"
+    "ticketOutcome2"
+    "ticketOutcome3"
+    "ticketOutcome4"
+    "ticketOutcome5"
+    "ticketOutcome6"
+    "ticketOutcome7"
+    "ticketOutcome8"
+    ;
+}
+.numberOfOutcomes {
+    borsder: solid;
+    grid-area: numberOfOutcomes;
+    display: grid;
+    grid-template-areas: 
+    "numberOfOutcomes1"
+    "numberOfOutcomes2"
+    "numberOfOutcomes3"
+    "numberOfOutcomes4"
+    "numberOfOutcomes5"
+    "numberOfOutcomes6"
+    "numberOfOutcomes7"
+    "numberOfOutcomes8";
+    
+}
+.winOutcome {
+    bordser: solid;
+    grid-area: winOutcome;
+    display: grid;
+    grid-template-areas: 
+    "winOutcome1"
+    "winOutcome2"
+    "winOutcome3"
+    "winOutcome4"
+    "winOutcome5"
+    "winOutcome6"
+    "winOutcome7";
+}
+.ticketId1 {
+    grid-area:ticketId1;
+    background-color: gray;
+    border: solid;
+    color: whitesmoke;
+    font-weight: bold;
+    height: 50px;
+}
+.ticketId2 {
+    grid-area:ticketId2;
+    background-color: gray;
+    border: solid;
+    height: 50px;
+    color:white;
+}
+.ticketId3 {
+    grid-area:ticketId3;
+    background-color: gray;
+    border: solid;
+    height: 50px;
+    color:white;
+}
+.ticketId4 {
+    grid-area:ticketId4;
+    background-color: gray;
+    border: solid;
+    height: 50px;
+    color:white;
+}
+.ticketId5 {
+    grid-area:ticketId5;
+    background-color: gray;
+    border: solid;
+    height: 50px;
+    color:white;
+}
+.ticketId6 {
+    grid-area:ticketId6;
+    background-color: gray;
+    border: solid;
+    height: 50px;
+    color:white;
+}
+.ticketId7 {
+    grid-area:ticketId7;
+    background-color: gray;
+    border: solid;
+    height: 50px;
+    color:white;
+}
+.ticketId8 {
+    grid-area:ticketId8;
+    background-color: gray;
+    border: solid;
+    height: 50px;
+    color:white;
+    
+}
+.ticketOutcome1 {
+    grid-area:ticketOutcome1;
+    background-color: gray;
+    border: solid;
+    display: grid;
+    height: 50px;
+    grid-template-areas: 
+    "ones twos threes fours fives sixs";
+    color:white;
+
+}
+.ticketOutcome2 {
+    grid-area:ticketOutcome2;
+    background-color: gray;
+    border: solid;
+    height: 50px;
+    display: grid;
+    grid-template-areas: 
+    "ones twos threes fours fives sixs";
+    color:white;
+    
+
+}
+.ticketOutcome3 {
+    grid-area:ticketOutcome3;
+    background-color: gray;
+    border: solid;
+    height: 50px;
+    color:white;
+    display: grid;
+    grid-template-areas: 
+    "ones twos threes fours fives sixs";
+}
+.ticketOutcome4 {
+    grid-area:ticketOutcome4;
+    background-color: gray;
+    border: solid;
+    height: 50px;
+    color:white;
+    display: grid;
+    grid-template-areas: 
+    "ones twos threes fours fives sixs";
+}
+.ticketOutcome5 {
+    grid-area:ticketOutcome5;
+    background-color: gray;
+    border: solid;
+    height: 50px;
+    color:white;
+    display: grid;
+    grid-template-areas: 
+    "ones twos threes fours fives sixs sevens";
+
+}
+.ticketOutcome6 {
+    grid-area:ticketOutcome6;
+    background-color: gray;
+    border: solid;
+    height: 50px;
+    color:white;
+    display: grid;
+    grid-template-areas: 
+    "ones twos threes fours fives sixs";
+}
+.ticketOutcome7 {
+    grid-area:ticketOutcome7;
+    background-color: gray;
+    border: solid;
+    height: 50px;
+    color:white;
+    display: grid;
+    grid-template-areas: 
+    "ones twos threes fours fives sixs";
+}
+.ticketOutcome8 {
+    grid-area:ticketOutcome8;
+    background-color: gray;
+    border: solid;
+    height: 50px;
+    color:white;
+    display: grid;
+    grid-template-areas: 
+    "ones twos threes fours fives sixs";
+}
+.ones {
+    grid-area:ones;
+    background-color: red;
+    border-radius: 100%;
+    padding-bottom: 30%;
+    height: 50px;
+
+}
+.twos {
+    grid-area: twos;
+    background-color: blue;
+    border-radius: 100%;
+    height: 50px;
+
+}
+.threes {
+    grid-area: threes;
+    background-color: red;
+    border-radius: 100%;
+    height: 50px;
+    
+}
+.fours {
+    grid-area: fours;
+    background-color: yellow;
+    border-radius: 100%;
+    height: 50px;
+}
+.fives {
+    grid-area: fives;
+    background-color: blue;
+    border-radius: 100%;
+    height: 50px;
+}
+.sixs {
+    grid-area: sixs;
+    background-color: red;
+    border-radius: 100%;
+    height: 50px;
+}
+.noOfRed {
+    color: white;
+    grid-area: noOfRed;
+    border:solid black;
+    height:50px;
+    background-color: red;
+    width: 60px;
+}
+.noOfYellow {
+    grid-area: noOfYellow;
+    border:solid black;
+    height:50px;
+    width: 60px;
+    background-color: yellow;
+    color: white;
+}
+.noOfBlue {
+    grid-area: noOfBlue;
+    border:solid black;
+    height:50px;
+    background-color: blue;
+    width: 60px;
+    color: white;
+}
+.numberOfOutcomes1 {
+    grid-area: numberOfOutcomes1;
+    border: solid;
+    display: grid;
+    height: 50px;
+    grid-template-areas: 
+    "noOfRed noOfYellow noOfBlue";
+
+}
+.numberOfOutcomes2 {
+    grid-area: numberOfOutcomes2;
+    border: solid;
+    height: 50px;
+    display: grid;
+    grid-template-areas: 
+    "noOfRed noOfYellow noOfBlue";
+
+    
+}
+.numberOfOutcomes3 {
+    grid-area: numberOfOutcomes3;
+    border: solid;
+    height: 50px;
+    display: grid;
+    grid-template-areas: 
+    "noOfRed noOfYellow noOfBlue";
+
+    
+}
+.numberOfOutcomes4 {
+    grid-area: numberOfOutcomes4;
+    border: solid;
+    height: 50px;
+    display: grid;
+    grid-template-areas: 
+    "noOfRed noOfYellow noOfBlue";
+
+    
+}
+.numberOfOutcomes5 {
+    grid-area: numberOfOutcomes5;
+    border: solid;
+    display: grid;
+    height: 50px;
+    grid-template-areas: 
+    "noOfRed noOfYellow noOfBlue";
+
+    
+}
+.numberOfOutcomes6 {
+    grid-area: numberOfOutcomes6;
+    border: solid;
+    height: 50px;
+    display: grid;
+    grid-template-areas: 
+    "noOfRed noOfYellow noOfBlue";
+
+    
+}
+.numberOfOutcomes7 {
+    grid-area: numberOfOutcomes7;
+    border: solid;
+    height: 50px;
+    display: grid;
+    grid-template-areas: 
+    "noOfRed noOfYellow noOfBlue";
+
+    
+}
+.numberOfOutcomes8 {
+    grid-area: numberOfOutcomes8;
+    border: solid;
+    
+}
+.winOutcome1 {
+    grid-area: winOutcome1;
+    height: 50px;
+    border: solid;
+    width: 100px;
+    display: grid;
+    grid-template-areas: 
+    "wonColorBlue";
+
+}
+.winOutcome2 {
+    grid-area: winOutcome2;
+    height: 50px;
+    border: solid;
+    width: 100px;
+    display: grid;
+    grid-template-areas: 
+    "wonColorRed";
+
+}
+
+
+
+.winOutcome3 {
+    grid-area: winOutcome3;
+    height: 50px;
+    border: solid;
+    width: 100px;
+    display: grid;
+    grid-template-areas: 
+    "wonColorYellow";
+
+}
+.winOutcome4 {
+    grid-area: winOutcome4;
+    height: 50px;
+    border: solid;
+    width: 100px;
+    display: grid;
+    grid-template-areas: 
+    "wonColorRed";
+
+}
+.winOutcome5 {
+    grid-area: winOutcome5;
+    height: 50px;
+    border: solid;
+    width: 100px;
+    display: grid;
+    grid-template-areas: 
+    "wonColorBlue";
+
+}
+.winOutcome6 {
+    grid-area: winOutcome6;
+    height: 50px;
+    border: solid;
+    width: 100px;
+    display: grid;
+    grid-template-areas: 
+    "wonColorYellow";
+
+}
+.winOutcome7 {
+    grid-area: winOutcome7;
+    height: 50px;
+    border: solid;
+    width: 100px;
+    display: grid;
+    grid-template-areas: 
+    "wonColorRed";
+
+}
+.wonColorRed {
+    grid-area: wonColorRed;
+    border: solid;
+    background-color: red;
+    height:50px;
+    color: white;
+
+}
+.wonColorYellow {
+    grid-area: winColorYellow;
+    border: solid;
+    background-color: yellow;
+    height:50px;
+    width: 100px;
+    color: white;
+
+}
+.wonColorBlue {
+    grid-area: wonColorBlue;
+    border: solid;
+    width: 100px;
+    background-color:blue;
+    height:50px;
+    color: white;
+
+}
